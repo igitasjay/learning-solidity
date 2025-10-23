@@ -71,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/my-examples/calculator.sol": "Calculator"
+			"contracts/twitter.sol": "Calculator"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -85,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/my-examples/calculator.sol": {
-			"keccak256": "0xf8203817eb4dbe46db59c77255b547f088b77660b8fb3d4cd09ef3c540ed1d27",
+		"contracts/twitter.sol": {
+			"keccak256": "0x65f2483becbbc57093ac0cfc48ccd7e282198c7ecd91f8a10f90df93a8e4f034",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://61d316beb19d2dce3e74f5d92dd303cff04a84db0f7d0d8583b5644108d4f8dc",
-				"dweb:/ipfs/Qmdc2hZJQXvHyj8Td3ES1pEsk4XqM6AJWnM1SHBKnSQRq7"
+				"bzz-raw://4abfa5f9c89ce2abc83595d040f9314dd26a0123c6e9fe3be21e1404add79ae1",
+				"dweb:/ipfs/QmRpSJ4Zdx8uX6EwA1efkgS8XQdippMohEuNkegaWLpvd5"
 			]
 		}
 	},
