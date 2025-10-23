@@ -6,6 +6,37 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "MAX_TWEET_LENGTH",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "newTweetLength",
+						"type": "uint16"
+					}
+				],
+				"name": "changeTweetLength",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -30,6 +61,11 @@
 				"outputs": [
 					{
 						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
 							{
 								"internalType": "address",
 								"name": "author",
@@ -62,11 +98,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_owner",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "_i",
 						"type": "uint256"
@@ -76,6 +107,11 @@
 				"outputs": [
 					{
 						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
 							{
 								"internalType": "address",
 								"name": "author",
@@ -109,6 +145,37 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "likeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					},
@@ -120,6 +187,11 @@
 				],
 				"name": "tweets",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
 					{
 						"internalType": "address",
 						"name": "author",
@@ -143,6 +215,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "author",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "unlikeTweet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -158,7 +248,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/tweet.sol": "Twitter"
+			"contracts/ultimate-solidity-course-for-complete-beginners-main/Exercises/18-Twitter-AddLike-Exercise.sol": "Twitter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -172,12 +262,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/tweet.sol": {
-			"keccak256": "0xe9455d3c4360bd129d0ee64fdaf2eb6f7f7cddfed7e2d6d0daef5ec36f267cd8",
+		"contracts/ultimate-solidity-course-for-complete-beginners-main/Exercises/18-Twitter-AddLike-Exercise.sol": {
+			"keccak256": "0xbe41247236c61b9e1a751adb35983e1899f05ded82052a217bb740c1f24acece",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://160f3bec2884c21cd46afa1809201d2f38227f04b21aea3d94e4405da2fba9f5",
-				"dweb:/ipfs/QmeoHbAj7S1kdZkEW6b6wLmHLfeCxBTNyrqAmhcbsFKP86"
+				"bzz-raw://6da06a1b52c502919732c1218452f9f1aee78ee5098840722d07527e2f6d8c13",
+				"dweb:/ipfs/QmbhvqNxHhE8pS2f8ePXvxsDgZvm5BCrP4wgBqQhhS2km8"
 			]
 		}
 	},
